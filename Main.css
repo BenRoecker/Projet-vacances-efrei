@@ -103,11 +103,19 @@ footer
 
 #buttonfoot
 {
-    color: black;
     margin: 20px;
     height: 50px;
+    background-color: black;
 }
 #buttonfoot:hover
 {
-    border: black 2px solid;
+    border: white 2px solid;
+}
+#textfoot
+{
+    color: #F05B82;
+}
+#textfoot:hover
+{
+    color: white;
 }
