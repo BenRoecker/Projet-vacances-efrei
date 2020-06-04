@@ -4,8 +4,6 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 body
@@ -26,11 +24,20 @@ body
     font-family:Verdana, "sans-serif";
 }
 
+#Main
+{
+    background-image: url("image/Accueil background.png");
+    background-color: #BC0047;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 button
 {
     border: none;
     margin: auto;
     background-color: transparent;
+    border-radius: 5%;
 
 }
 
@@ -39,18 +46,28 @@ button
     align-items: center;
 }
 
+#accueil
+{
+    background-color: #F05B82;
+
+}
+
+#acc
+{
+    color: white;
+    background-color: #F05B82;
+}
 a
 {
     color : #F05B82;
     text-decoration:none;
     font-size: 20px;
     margin: 5%;
+    border-radius: 35%;
 }
 
-#Main
+button :hover
 {
-    background-image: url("image/Accueil background.png");
-    background-color: #BC0047;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: #F05B82;
+    color:white;
 }
