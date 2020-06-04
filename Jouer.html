@@ -12,11 +12,39 @@
     <div class="boutons">
         <button><a href="Accueil.html">Accueil</a></button>
         <button><a href="Qui_sommes_nous.html">A propos de nous</a></button>
-        <button><a href="Jouer.html">A vous de jouer</a></button>
+        <button id="accueil"><a id ="acc" href="Jouer.html">A vous de jouer</a></button>
         <button><a href="Ete.html">Ete</a></button>
         <button><a href="Hiver.html">Hiver</a></button>
         <button><a href="Itinéraires.html">Nos idées</a></button>
     </div>
 </header>
+<main>
+    <form id="cool" action="Jouer.html" method="post" class="style_form"  onsubmit="return false">
+        <div id="champ">
+            <label for="prenom">Prénom : </label>
+            <input type="text" placeholder="Prénom" id="prenom" data-value-missing="required" required>
+            <label for="nom">Nom : </label>
+            <input type="text" placeholder="Nom" id="nom" data-value-missing="required" required>
+            <label for="lieux">Lieux de résidence : </label>
+            <input type="text" placeholder="Lieux de vavance" id="lieux" data-value-missing="required" required>
+            <label for="duree">Durée du séjours : </label>
+            <input type="text" placeholder="Durée du voyage" id="duree" data-value-missing="required" required>
+            <label for="prix">prix du séjours : </label>
+            <input type="text" placeholder="Prix" id="prix" data-value-missing="required" required>
+            <label for="note">Avis : </label>
+            <select id="note">
+                <option value="1star">1 étoile</option>
+                <option value="2star">2 étoiles</option>
+                <option value="3star">3 étoiles</option>
+                <option value="4star">4 étoiles</option>
+                <option value="5star">5 étoiles</option>
+            </select>
+        </div>
+        <div id="button">
+            <button id="ajouter" onclick="addtomain()">Ajouter</button>
+            <button id="supprimer" onclick="suppr()">Tout supprimer</button>
+        </div>
+    </form>
+</main>
 </body>
 </html>
