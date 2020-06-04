@@ -4,6 +4,13 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(white, #A7DAFD);
+    width: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body
