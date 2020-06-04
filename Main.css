@@ -119,3 +119,8 @@ footer
 {
     color: white;
 }
+#winter
+{
+    background-image: url("winter background.jpg");
+    background-color: lightgray;
+}
