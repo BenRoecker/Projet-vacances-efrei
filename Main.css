@@ -1,3 +1,48 @@
+header
+{
+    color: #F05B82;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 
+}
+
+body
+{
+}
+
+#LOGO
+{
+    height: 50px;
+    margin-right: 3%;
+}
+
+.logo
+{
+    align-items: center;
+    display: flex;
+    font-family:Verdana, "sans-serif";
+}
+
+button
+{
+    border: none;
+    margin: auto;
+    background-color: transparent;
+
+}
+
+.boutons
+{
+    align-items: center;
+}
+
+a
+{
+    color : #F05B82;
+    text-decoration:none;
+    font-size: 20px;
+    margin: 5%;
+}
 
