@@ -31,7 +31,6 @@ button
     border: none;
     margin: auto;
     background-color: transparent;
-    border-radius: 25%;
 
 }
 
@@ -40,16 +39,6 @@ button
     align-items: center;
 }
 
-#accueil
-{
-    background-color: #F05B82;
-
-}
-
-#acc
-{
-    color: white;
-}
 a
 {
     color : #F05B82;
@@ -58,8 +47,10 @@ a
     margin: 5%;
 }
 
-.boutons :hover
+#Main
 {
-    background-color: #F05B82;
-    color:white;
+    background-image: url("image/Accueil background.png");
+    background-color: #BC0047;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
