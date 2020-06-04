@@ -29,6 +29,7 @@ body
     font-family:Verdana, "sans-serif";
     flex-direction: row;
     justify-content: left;
+    margin: 10px;
 }
 
 #Main
@@ -53,12 +54,13 @@ button
     background-color: transparent;
     border-radius: 25%;
     margin-bottom: auto;
+    padding: 10px;
 }
 
 .boutons
 {
     align-items: center;
-    width: 600px;
+    width: 800px;
 }
 
 #accueil
@@ -102,6 +104,10 @@ footer
 #buttonfoot
 {
     color: black;
-    padding: 20px;
+    margin: 20px;
     height: 50px;
+}
+#buttonfoot:hover
+{
+    border: black 2px solid;
 }
