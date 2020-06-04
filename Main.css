@@ -121,6 +121,13 @@ footer
 }
 #winter
 {
-    background-image: url("winter background.jpg");
+    background-image: url("image/winter background.jpg");
     background-color: lightgray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.black
+{
+    color: black;
 }
