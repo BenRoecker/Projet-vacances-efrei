@@ -4,8 +4,6 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(white, #A7DAFD);
-    width: auto;
 }
 
 * {
@@ -29,6 +27,8 @@ body
     align-items: center;
     display: flex;
     font-family:Verdana, "sans-serif";
+    flex-direction: row;
+    justify-content: left;
 }
 
 #Main
@@ -49,10 +49,10 @@ button:hover
 button
 {
     border: none;
-    margin: auto;
+    margin: 2%;
     background-color: transparent;
     border-radius: 25%;
-
+    margin-bottom: auto;
 }
 
 .boutons
@@ -70,8 +70,8 @@ a
 {
     color : #F05B82;
     text-decoration:none;
-    font-size: 20px;
-    margin: 5%;
+    font-size: 15px;
+
 }
 
 a:hover{
