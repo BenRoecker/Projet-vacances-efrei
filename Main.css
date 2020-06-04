@@ -4,6 +4,7 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(white, #A7DAFD);
 }
 
 body
@@ -37,7 +38,7 @@ button
     border: none;
     margin: auto;
     background-color: transparent;
-    border-radius: 5%;
+    border-radius: 35%;
 
 }
 
@@ -55,7 +56,6 @@ button
 #acc
 {
     color: white;
-    background-color: #F05B82;
 }
 a
 {
@@ -70,4 +70,9 @@ button :hover
 {
     background-color: #F05B82;
     color:white;
+}
+
+#accueil :hover
+{
+    color: grey;
 }
