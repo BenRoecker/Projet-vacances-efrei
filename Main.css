@@ -4,7 +4,6 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(white, #A7DAFD);
 }
 
 body
@@ -33,12 +32,19 @@ body
     background-size: 100%;
 }
 
+button:hover
+{
+    background-color: #F05B82;
+    color: white;
+}
+
+
 button
 {
     border: none;
     margin: auto;
     background-color: transparent;
-    border-radius: 35%;
+    border-radius: 25%;
 
 }
 
@@ -50,29 +56,20 @@ button
 #accueil
 {
     background-color: #F05B82;
-
-}
-
-#acc
-{
     color: white;
 }
+
 a
 {
     color : #F05B82;
     text-decoration:none;
     font-size: 20px;
     margin: 5%;
-    border-radius: 35%;
 }
 
-button :hover
-{
-    background-color: #F05B82;
+a:hover{
     color:white;
 }
-
-#accueil :hover
-{
-    color: grey;
+#acc{
+    color: white;
 }
