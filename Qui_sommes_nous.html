@@ -5,7 +5,7 @@
     <title>Qui sommes-nous ?</title>
     <link rel="stylesheet" href="Main.css"/>
     <style type="text/css">
-        #Principal
+        body
         {
             background-color: grey;
         }
@@ -19,6 +19,44 @@
             margin-right: auto;
             margin-left: auto;
 
+        }
+        table
+        {
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+        table
+        {
+            background-image: url("image/fond2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        table, th, td, caption {
+            border: 1px solid;
+            font-size: 16px;
+            font-family:Verdana, "sans-serif";
+        }
+        th, caption
+        {
+            font-size: 20px;
+            color: black;
+            border : none;
+        }
+        td, caption
+        {
+
+        }
+        td,th
+        {
+            width: 25%;
+            text-align: center;
+            padding: 10px;
+        }
+        .nous
+        {
+            border-radius: 50%;
+            height : 320px;
+            width : 320px;
         }
     </style>
 </head>
@@ -37,6 +75,18 @@
     </div>
 </header>
 </div>
+<table>
+    <caption>Qui sommes-nous ?</caption>
+    <tr>
+        <th>Benjamin <br> Roecker</th>
+        <th>Camille <br> Biguet</th>
+        <th>Marie <br> Sayag</th>
+    </tr>
+    <tr>
+        <th><img class="nous" src="image/Benjamin.jpg" alt=""></th>
+        <th><img class="nous" src="image/Camille.jpg" alt=""></th>
+    </tr>
+</table>
 
 
 
