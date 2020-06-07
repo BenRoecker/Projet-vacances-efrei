@@ -11,11 +11,6 @@ header
     padding: 0;
 }
 
-body
-{
-    background: linear-gradient(white, #A7DAFD);
-}
-
 #LOGO
 {
     height: 50px;
@@ -126,7 +121,7 @@ footer
 form
 {
     padding: 10px;
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: 5px 5px #F05B82;
     width: 80%;
     border-radius: 5px;
@@ -136,4 +131,51 @@ form
 input
 {
     margin: 5px;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    height: 95%;
+    box-shadow: 5px 5px lightskyblue;
+    border-radius: 5px;
+}
+
+td,th
+{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    min-width: 200px;
+}
+td
+{
+    border-top:1px deeppink solid;
+}
+
+h2
+{
+    font-size: 30px;
+    color: deepskyblue;
+    margin: auto;
+}
+#jouer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#wintermain
+{
+    display: flex;
+}
+
+#wintermain h2
+{
+    color: black;
 }

@@ -18,40 +18,80 @@
         <a href="Itinéraires.html">Nos idées</a>
     </div>
 </header>
-<main>
+<main id="jouer">
+    <h2>Donnez votre avis pour une destination</h2>
     <form id="cool" action="Jouer.html" method="post" class="style_form"  onsubmit="return false">
         <div id="champ">
             <label for="prenom">Prénom : </label>
             <input type="text" placeholder="Prénom" id="prenom" data-value-missing="required" required>
             <label for="nom">Nom : </label>
             <input type="text" placeholder="Nom" id="nom" data-value-missing="required" required>
-            <label for="lieux">Lieux de résidence : </label>
-            <input type="text" placeholder="Lieux de vavance" id="lieux" data-value-missing="required" required>
+            <label for="lieux">Lieu</label>
+            <input type="text" placeholder="Lieu de vavance" id="lieux" data-value-missing="required" required>
             <label for="duree">Durée du séjours : </label>
             <input type="text" placeholder="Durée du voyage" id="duree" data-value-missing="required" required>
             <label for="prix">prix du séjours : </label>
             <input type="text" placeholder="Prix" id="prix" data-value-missing="required" required>
             <label for="note">Avis : </label>
             <select id="note">
-                <option value="1star">1 étoile</option>
-                <option value="2star">2 étoiles</option>
-                <option value="3star">3 étoiles</option>
-                <option value="4star">4 étoiles</option>
-                <option value="5star">5 étoiles</option>
+                <option value="1">1 étoile</option>
+                <option value="2">2 étoiles</option>
+                <option value="3">3 étoiles</option>
+                <option value="4">4 étoiles</option>
+                <option value="5">5 étoiles</option>
             </select>
         </div>
         <div id="button">
-            <button id="ajouter">Ajouter</button>
+            <button id="ajouter" onclick="addtomain()">Ajouter</button>
             <button id="supprimer">Tout supprimer</button>
         </div>
     </form>
+    <table id="avis">
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Lieu de résidence</th>
+            <th>Durée du séjours</th>
+            <th>Prix</th>
+            <th>Note /5</th>
+        </tr>
+    </table>
 </main>
 <footer>
-    <button id="buttonfoot"><a id="textfoot" href="Qui_sommes_nous.html">A propos de nous</a></button>
+    <a id="textfoot" href="Qui_sommes_nous.html">A propos de nous</a>
     <a href="https://fr-fr.facebook.com/"><img class="logomini" src="image/facebook.svg" alt="Facebook"></a>
     <a href="https://twitter.com/explore"><img class="logomini" src="image/twitter.svg" alt="Twitter"></a>
     <a href="https://www.reddit.com/"><img class="logomini" src="image/reddit.svg" alt="Reddit"></a>
     <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
 </footer>
+<script>
+    function create_td(id){
+        const newnom = document.createElement("td");
+        newnom.textContent= document.getElementById(id).value;
+        console.log(newnom.textContent)
+        return newnom
+    }
+    function create_tr(){
+        const newtr = document.createElement("tr");
+        newtr.appendChild(create_td("prenom"));
+        newtr.appendChild(create_td("nom"));
+        newtr.appendChild(create_td("lieux"));
+        newtr.appendChild(create_td("duree"));
+        newtr.appendChild(create_td("prix"));
+        newtr.appendChild(create_td("note"));
+        return newtr;
+    }
+    function addtomain() {
+        let form = document.getElementById("cool");
+        let result = form.checkValidity();
+        if (result){
+            compteur = 10;
+            let tableau = document.getElementById("avis");
+            tableau.appendChild(create_tr());
+        } else {
+            alert("C'est pas bien !")
+        }
+    }
+</script>
 </body>
 </html>
