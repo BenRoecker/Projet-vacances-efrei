@@ -21,9 +21,9 @@
 <div id="mainwinter">
 <nav id="navwinter">
     <p>Votre choix de destination : </p>
-    <button class="boutonnav">Destinations découvertes</button>
-    <button class="boutonnav">Destinations sportives</button>
-    <button class="boutonnav">Destinations loisirs</button>
+    <button class="boutonnav" onclick="Showdecouverte()">Destinations découvertes</button>
+    <button class="boutonnav" onclick="Showsportive()">Destinations sportives</button>
+    <button class="boutonnav" onclick="Showloisir()">Destinations loisirs</button>
 </nav>
 <main id="wintermain">
     <h2>Où partir en Hiver ?</h2>
@@ -35,12 +35,18 @@
             Starsbourg. Il est toujours plein à craquer de touriste et de magasins.</p>
             <a href="https://www.visit.alsace/" >Site du tourisme en Alsace</a>
         </article>
-        <article class="Sportive">
+        <article class="sportive">
             <h3>Courchevel</h3>
             <p>Pour faire du ski, cette station, est légendaire. Les hotels luxueux y sont nombreux. Ce fut la première station
             française aménagée en site vierge. Elle fait partie du domaine skiable des 3 vallées. Tout type d'activité y sont possible,
             randonnée, luge, ski...</p>
             <a href="https://www.courchevel.com/fr">Site du tourisme à Courchevel</a>
+        </article>
+        <article class="loisir">
+            <h3>Igloofest</h3>
+            <p>ce festival de musique électronique a lieu tout les ans au Québec. Il fête ces 15 ans cette année. Nous
+            pouvons y retrouver : Joachim Pastor, Tone Depth, BSLC et plein d'autre.</p>
+            <a href="https://igloofest.ca/">Site de l'Igloofest</a>
         </article>
     </div>
 </main>
@@ -52,5 +58,43 @@
     <a href="https://www.reddit.com/"><img class="logomini" src="image/reddit.svg" alt="Reddit"></a>
     <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
 </footer>
+<script>
+    let sportive = document.getElementsByClassName("sportive")
+    let loisir = document.getElementsByClassName("loisir")
+    let decouverte = document.getElementsByClassName("decouverte")
+    function Showsportive(){
+        for (const element of loisir){
+            element.style.display="none";
+        }
+        for (const element of decouverte){
+            element.style.display="none";
+        }
+        for (const element of sportive){
+            element.style.display="flex";
+        }
+    }
+    function Showdecouverte(){
+        for (const element of loisir){
+            element.style.display="none";
+        }
+        for (const element of decouverte){
+            element.style.display="flex";
+        }
+        for (const element of sportive){
+            element.style.display="none";
+        }
+    }
+    function Showloisir(){
+        for (const element of loisir){
+            element.style.display="flex";
+        }
+        for (const element of decouverte){
+            element.style.display="none";
+        }
+        for (const element of sportive){
+            element.style.display="none";
+        }
+    }
+</script>
 </body>
 </html>
