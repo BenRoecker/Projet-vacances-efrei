@@ -40,14 +40,14 @@ body
     background-size: 100%;
 }
 
-button:hover
+a
 {
     background-color: #F05B82;
     color: white;
 }
 
 
-button
+a
 {
     border: none;
     margin: 2%;
@@ -62,8 +62,7 @@ button
     align-items: center;
     width: 800px;
 }
-
-#accueil
+a:hover
 {
     background-color: #F05B82;
     color: white;
@@ -77,10 +76,9 @@ a
 
 }
 
-a:hover{
-    color:white;
-}
+
 #acc{
+    background-color: #F05B82;
     color: white;
 }
 
@@ -98,26 +96,19 @@ footer
 .logomini
 {
     height: 50px;
-    padding: 20px;
+    padding: 5px;
 }
 
-#buttonfoot
-{
-    margin: 20px;
-    height: 50px;
-    background-color: black;
-}
-#buttonfoot:hover
-{
-    border: white 2px solid;
-}
 #textfoot
 {
     color: #F05B82;
+    margin: 20px;
+    background-color: black;
 }
 #textfoot:hover
 {
     color: white;
+    border: white 2px solid;
 }
 #winter
 {
