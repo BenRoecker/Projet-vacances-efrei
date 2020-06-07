@@ -43,7 +43,7 @@
         </div>
         <div id="button">
             <button id="ajouter" onclick="addtomain()">Ajouter</button>
-            <button id="supprimer">Tout supprimer</button>
+            <button id="supprimer" onclick="supp()">Tout supprimer</button>
         </div>
     </form>
     <table id="avis">
@@ -65,6 +65,7 @@
     <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
 </footer>
 <script>
+    compteur = 0;
     function create_td(id){
         const newnom = document.createElement("td");
         newnom.textContent= document.getElementById(id).value;
@@ -85,12 +86,18 @@
         let form = document.getElementById("cool");
         let result = form.checkValidity();
         if (result){
-            compteur = 10;
             let tableau = document.getElementById("avis");
             tableau.appendChild(create_tr());
+            compteur = compteur +1;
         } else {
             alert("C'est pas bien !")
         }
+    }
+    function supp() {
+        let tableau = document.getElementById("avis");
+        for(let i = 0; i < compteur; i ++)
+            tableau.deleteRow(-1);
+        compteur = 0;
     }
 </script>
 </body>

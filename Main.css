@@ -37,19 +37,15 @@ header
 
 a
 {
-    background-color: #F05B82;
-    color: white;
-}
-
-
-a
-{
     border: none;
     margin: 2%;
     background-color: transparent;
     border-radius: 10px;
     margin-bottom: auto;
     padding: 10px;
+    color : #F05B82;
+    text-decoration:none;
+    font-size: 15px;
 }
 
 .boutons
@@ -61,14 +57,6 @@ a:hover
 {
     background-color: #F05B82;
     color: white;
-}
-
-a
-{
-    color : #F05B82;
-    text-decoration:none;
-    font-size: 15px;
-
 }
 
 
@@ -133,7 +121,7 @@ input
     margin: 5px;
 }
 
-table
+#avis
 {
     border-collapse: collapse;
     width: 95%;
@@ -144,6 +132,8 @@ table
     height: 95%;
     box-shadow: 5px 5px lightskyblue;
     border-radius: 5px;
+    max-height: 400px;
+    overflow: auto;
 }
 
 td,th
@@ -173,9 +163,33 @@ h2
 #wintermain
 {
     display: flex;
+    flex-direction: column;
 }
 
 #wintermain h2
 {
     color: black;
+}
+
+#navwinter
+{
+    display: flex;
+    background: #F05B82;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.boutonnav
+{
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+.boutonnav:hover
+{
+    border: 2px solid white;
+    color: white;
 }
