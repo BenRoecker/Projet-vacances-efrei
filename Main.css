@@ -172,6 +172,21 @@ h2
 {
     display: flex;
     background: #F05B82;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
 }
-
-
+.boutonnav
+{
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+.boutonnav:hover
+{
+    border: 2px solid white;
+    color: white;
+}
