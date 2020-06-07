@@ -5,6 +5,7 @@
     <title>Ete</title>
     <link rel="stylesheet" href="Main.css"/>
     <style type="text/css">
+
         body
         {
             background-image: url("image/Background_ete.png");
@@ -46,6 +47,22 @@
         }
         footer{
             background-color: #A7DAFD;
+        }
+        button{
+            border: none;
+            margin: 2%;
+            background-color: transparent;
+            border-radius: 10px;
+            margin-bottom: auto;
+            padding: 10px;
+            color : #F05B82;
+            text-decoration:none;
+            font-size: 15px;
+        }
+        button:hover
+        {
+            background-color: #F05B82;
+            color: white;
         }
     </style>
 </head>
@@ -189,6 +206,12 @@
     <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
 </footer>
 <script>
+    europe.style.display = "none"
+    afrique.style.display = "none"
+    amerique.style.display = "none"
+    asie.style.display = "none"
+    oceanie.style.display = "none"
+
     function showEurope(){
         let europe = document.getElementById("europe");
         let afrique = document.getElementById("afrique");
