@@ -5,9 +5,11 @@
     <title>Qui sommes-nous ?</title>
     <link rel="stylesheet" href="Main.css"/>
     <style type="text/css">
-        body
+        #Principal
         {
-            background-color: grey;
+            background-image: url("image/fond2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
 
         #Debut
@@ -20,33 +22,39 @@
             margin-left: auto;
 
         }
-        table
+        caption
         {
-            border-collapse: collapse;
-            margin-top: 40px;
+
+        }
+        #titre
+        {
+            font-family:Cambria, "sans-serif";
+            font-size: 50px;
+            background-color: midnightblue;
+            color: aliceblue;
+            height: 90vh;
+            margin-right: auto;
+            margin-left: auto;
+
+
         }
         table
         {
             background-image: url("image/fond2.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
+            border-collapse: collapse;
+            border : none;
         }
-        table, th, td, caption {
-            border: 1px solid;
+
+        th, tr{
+
             font-size: 16px;
             font-family:Verdana, "sans-serif";
         }
-        th, caption
+        th
         {
-            font-size: 20px;
-            color: black;
-            border : none;
+            color: lightgoldenrodyellow;
         }
-        td, caption
-        {
-
-        }
-        td,th
+        tr,th
         {
             width: 25%;
             text-align: center;
@@ -60,7 +68,8 @@
         }
     </style>
 </head>
-<body id="Principal">
+<body>
+<div id="Principal">
 <div id="Debut">
 <header>
     <div class="logo"><img id="LOGO" src="image/logo WEb .svg" alt ="Logo">
@@ -75,21 +84,21 @@
     </div>
 </header>
 </div>
-<table>
-    <caption>Qui sommes-nous ?</caption>
-    <tr>
-        <th>Benjamin <br> Roecker</th>
-        <th>Camille <br> Biguet</th>
-        <th>Marie <br> Sayag</th>
-    </tr>
-    <tr>
-        <th><img class="nous" src="image/Benjamin.jpg" alt=""></th>
-        <th><img class="nous" src="image/Camille.jpg" alt=""></th>
-    </tr>
-</table>
+    <table>
+        <caption id="titre">Qui sommes-nous ?</caption>
+        <tr>
+            <th>Benjamin <br> Roecker</th>
+            <th>Camille <br> Biguet</th>
+            <th>Marie <br> Sayag</th>
+        </tr>
+        <tr>
+            <th><img class="nous" src="image/Benjamin.jpg" alt=""></th>
+            <th><img class="nous" src="image/Camille.jpg" alt=""></th>
+        </tr>
+    </table>
 
 
 
-
+</div>
 </body>
 </html>
