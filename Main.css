@@ -132,6 +132,8 @@ input
     height: 95%;
     box-shadow: 5px 5px lightskyblue;
     border-radius: 5px;
+    max-height: 400px;
+    overflow: auto;
 }
 
 td,th
@@ -161,6 +163,7 @@ h2
 #wintermain
 {
     display: flex;
+    flex-direction: column;
 }
 
 #wintermain h2
