@@ -5,18 +5,15 @@ header
     align-items: center;
     justify-content: space-between;
 }
-
 * {
     margin: 0;
     padding: 0;
 }
-
 #LOGO
 {
     height: 50px;
     margin-right: 3%;
 }
-
 .logo
 {
     align-items: center;
@@ -26,7 +23,6 @@ header
     justify-content: left;
     margin: 10px;
 }
-
 #Main
 {
     background-image: url("image/Accueil background.png");
@@ -34,7 +30,6 @@ header
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 a
 {
     border: none;
@@ -58,13 +53,10 @@ a:hover
     background-color: #F05B82;
     color: white;
 }
-
-
 #acc{
     background-color: #F05B82;
     color: white;
 }
-
 footer
 {
     position: fixed;
@@ -75,13 +67,11 @@ footer
     align-items: center;
 
 }
-
 .logomini
 {
     height: 50px;
     padding: 5px;
 }
-
 #textfoot
 {
     color: #F05B82;
@@ -120,7 +110,6 @@ input
 {
     margin: 5px;
 }
-
 #avis
 {
     border-collapse: collapse;
@@ -135,7 +124,6 @@ input
     max-height: 400px;
     overflow: auto;
 }
-
 td,th
 {
     width: 25%;
@@ -147,7 +135,6 @@ td
 {
     border-top:1px deeppink solid;
 }
-
 h2
 {
     font-size: 30px;
@@ -159,19 +146,16 @@ h2
     display: flex;
     flex-direction: column;
 }
-
 #wintermain
 {
     display: flex;
     flex-direction: column;
 }
-
 #wintermain h2
 {
     color: black;
     margin: auto;
 }
-
 #navwinter
 {
     display: flex;
@@ -180,14 +164,14 @@ h2
     padding: 10px;
     border-radius: 20px;
     margin: 5px;
-    width: content-box;
-    height: 25%;
+    width: fit-content;
+    height: auto;
 }
 .boutonnav
 {
     margin: 5px;
     background-color: transparent;
-    border: none;
+    border: 2px solid transparent;
     padding: 5px;
     border-radius: 20px;
 }
@@ -199,6 +183,7 @@ h2
 #mainwinter
 {
     display: flex;
+    align-items: flex-start;
 }
 
 article
@@ -226,6 +211,7 @@ article p
 #articles
 {
     display: flex;
+    width: 80%;
     flex-wrap: wrap;
 }
 
