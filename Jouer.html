@@ -32,6 +32,9 @@
             <input type="text" placeholder="Durée du voyage" id="duree" data-value-missing="required" required>
             <label for="prix">prix du séjours : </label>
             <input type="text" placeholder="Prix" id="prix" data-value-missing="required" required>
+            <br>
+            <label for="commentaire">Commentaire : </label>
+            <textarea rows=2 COLS=20 placeholder="commentaire" id="commentaire" data-value-missing="required" required></textarea>
             <label for="note">Avis : </label>
             <select id="note">
                 <option value="1">1 étoile</option>
@@ -55,6 +58,7 @@
             <th>Durée du séjours</th>
             <th>Prix</th>
             <th>Note /5</th>
+            <th>Commentaire</th>
         </tr>
     </table>
 </main>
@@ -97,6 +101,7 @@
         newtr.appendChild(create_td("duree"));
         newtr.appendChild(create_td("prix"));
         newtr.appendChild(create_td("note"));
+        newtr.appendChild(create_td("commentaire"))
         return newtr;
     }
     function addtomain() {
