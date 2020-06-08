@@ -5,7 +5,7 @@
     <title>Jouer</title>
     <link rel="stylesheet" href="Main.css"/>
 </head>
-<body>
+<body id="page">
 <header>
     <div class="logo"><img id="LOGO" src="image/logo WEb .svg" alt ="Logo">
         <h1>TravelUp</h1></div>
@@ -44,6 +44,7 @@
         <div id="button">
             <button id="ajouter" onclick="addtomain()">Ajouter</button>
             <button id="supprimer" onclick="supp()">Tout supprimer</button>
+            <button id="couleur" onclick="changement()">Changement de couleur</button>
         </div>
     </form>
     <table id="avis">
@@ -73,7 +74,7 @@
             --temps;
             document.getElementById("ajouter").innerHTML = "(use in: " + temps + " second)";
         }
-        else if (temps == 0)
+        else if (temps === 0)
         {
             document.getElementById("ajouter").innerHTML = "Ajouter";
         }
@@ -116,6 +117,30 @@
         for(let i = 0; i < compteur; i ++)
             tableau.deleteRow(-1);
         compteur = 0;
+    }
+    let couleur = 0;
+    let page = document.getElementById("page");
+    let form = document.getElementById("cool");
+    let logos = document.getElementsByClassName("logomini");
+    function changement(){
+        if(couleur === 0){
+            page.style.backgroundColor = "black";
+            page.style.color = "white";
+            form.style.backgroundColor = "grey";
+            for(let logo of logos){
+                logo.style.backgroundColor = "#F05B82"
+            }
+            couleur = 1;
+        }
+        else{
+            page.style.backgroundColor = "white";
+            page.style.color = "black";
+            form.style.backgroundColor = "lightgrey";
+            for(let logo of logos){
+                logo.style.backgroundColor = "white"
+            }
+            couleur = 0;
+        }
     }
 </script>
 </body>
