@@ -18,9 +18,7 @@
         }
         main{
             font-family: Verdana, "sans-serif" ;
-        }
-        par{
-            margin-left: 300px;
+            text-align: center;
         }
         body
         {
@@ -28,6 +26,27 @@
             background-size: 100%;
             background-attachment: fixed;
         }
+        .pagination {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination a:hover:not(.active) {background-color: #ddd;}
     </style>
 </head>
 <body>
@@ -50,7 +69,11 @@
     <p class = "par" style="line-height:20px;" >
         <h1>La Croatie</h1>
         <br>La Croatie est un pays d'Europe centrale. Il est entouré par la Slovénie, la Hongrie où encore de la Serbie. On retrouve plusieurs climat en Croatie, un climat continental au nord, un climat méditerranéen dans le littoral et le reste de la Croatie est montagneux. Aussi, il contient huit pars nationaux et la population est de 4 millions. La langue officiel est le Croate mais l'anglais y est beaucoup parlé. <br><br> Nous vous proposons donc un itinéraire à travers la Croatie afin de découvrir ses beaux paysages, son histoires et ses spécialités. Nous vous proposons de commencer par Zagreb...
-    </p>
+    </p><br><br><br>
+    <div class="pagination">
+        <a href="#">❮</a>
+        <a href="#">❯</a>
+    </div>
 </main>
 <footer>
     <a id="textfoot" href="Qui_sommes_nous.html">A propos de nous</a>
