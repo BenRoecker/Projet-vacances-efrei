@@ -10,7 +10,7 @@
 
         footer
         {
-            background-color: #F05B82;
+            background: linear-gradient(0, #F05B82, transparent);
         }
         #p_nous
         {
@@ -90,7 +90,9 @@
             width : 50%;
 
         }
-        #p2{color: hsla(0, 100%, 50%, 0.5);}
+        #p2{background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 100%, 50%, 0.5)), to(#1c1c1c));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;}
         .Marie
         {
             border-radius: 50%;
@@ -98,7 +100,12 @@
             width : 50%;
 
         }
-        #p3{color: hsla(0, 100%, 85%, 0.8);}
+        #p3{
+            background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 100%, 50%, 0.9)), to(white));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            }
         .Benjamin
         {
             border-radius: 50%;
@@ -106,7 +113,11 @@
             width : 50%;
 
         }
-        #p1{color: hsla(0, 100%, 30%, 0.4);}
+        #p1{
+            background: -webkit-gradient(linear, left top, left bottom, from(cyan), to(black));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         #prenom{color: grey;
         }
     </style>
@@ -145,25 +156,28 @@
         </tr>
         <tr>
             <th>
-                <p id="p1">Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
-                    et celle concernant notre proposition de voyage.
-                    Ce projet dans lequel nous étions totalement libre,
-                    nous a permis d'imaginer un site avec les fonctionnalités que l'on souhaitait et
-                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.</p>
+                <q id="p1">Hello, je suis Benjamin Roecker,
+                    lors de ce projet je fut project manager,
+                    je fus aussi en chage de la page "hiver" et "à vous de jouer".
+                    J'ai pu mettre en pratique mes cours de management.
+                    La liberté que nous avons eu pour ce  projet nous a permis de laisser libre cours
+                    à notre imagination. C'est une bonne situation ça project manager ?
+                    Vous savez moi je pense pas qu'il y est de bonne ou mauvaise condition....</q>
             </th>
             <th id="p2">
-                <p>Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
+                <q>Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
                     et celle concernant notre proposition de voyage.
                     Ce projet dans lequel nous étions totalement libre,
                     nous a permis d'imaginer un site avec les fonctionnalités que l'on souhaitait et
-                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.</p>
+                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.</q>
             </th>
             <th id="p3">
-                <p>Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
-                    et celle concernant notre proposition de voyage.
-                    Ce projet dans lequel nous étions totalement libre,
-                    nous a permis d'imaginer un site avec les fonctionnalités que l'on souhaitait et
-                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.</p>
+                <q>Bonjour et bienvenue ! Je suis Marie Sayag.
+                    J'ai été chargée de réaliser la page 'Qui sommes nous ?' et la page d'accueil
+                    avec l'aide des deux autres membres.
+                    Nous avons tenté de rassembler l'utilité avec l'esthétique pour vous faire voyager tout en restant chez vous !
+                    Laissez vous submerger par notre monde de paysage et de voyage !
+                    Et n'oubliez pas de nous rejoindre sur nos réseaux !</q>
             </th>
         </tr>
     </table>
