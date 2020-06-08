@@ -19,19 +19,26 @@
         main{
             font-family: Verdana, "sans-serif" ;
             text-align: center;
+            margin-bottom: 100px;
         }
         body
         {
             background-image: url("image/FondCroatie.png");
             background-size: 100%;
             background-attachment: fixed;
+            margin-bottom: 100px;
+        }
+        h1{
+            text-align: center;
+            padding-right: 20%;
+            padding-bottom: 20%;
         }
         .pagination {
-            display: flex;
+            display : flex;
             flex-direction: row;
         }
 
-        .pagination a {
+        .pagination button {
             color: black;
             float: left;
             padding: 8px 16px;
@@ -40,13 +47,13 @@
             border: 1px solid #ddd;
         }
 
-        .pagination a.active {
+        .pagination button.active {
             background-color: #4CAF50;
             color: white;
             border: 1px solid #4CAF50;
         }
 
-        .pagination a:hover:not(.active) {background-color: #ddd;}
+        .pagination button:hover:not(.active) {background-color: #ddd;}
     </style>
 </head>
 <body>
@@ -66,13 +73,32 @@
     <p class = "carte">
         <img src="image/MapCro.PNG" alt="" height="400px" width="400px" />
     </p>
-    <p class = "par" style="line-height:20px;" >
+    <div id = "0" style="line-height:20px;" >
         <h1>La Croatie</h1>
-        <br>La Croatie est un pays d'Europe centrale. Il est entouré par la Slovénie, la Hongrie où encore de la Serbie. On retrouve plusieurs climat en Croatie, un climat continental au nord, un climat méditerranéen dans le littoral et le reste de la Croatie est montagneux. Aussi, il contient huit pars nationaux et la population est de 4 millions. La langue officiel est le Croate mais l'anglais y est beaucoup parlé. <br><br> Nous vous proposons donc un itinéraire à travers la Croatie afin de découvrir ses beaux paysages, son histoires et ses spécialités. Nous vous proposons de commencer par Zagreb...
-    </p><br><br><br>
-    <div class="pagination">
-        <a href="#">❮</a>
-        <a href="#">❯</a>
+        <p>La Croatie est un pays d'Europe centrale. Il est entouré par la Slovénie, la Hongrie où encore de la Serbie. On retrouve plusieurs climat en Croatie, un climat continental au nord, un climat méditerranéen dans le littoral et le reste de la Croatie est montagneux. Aussi, il contient huit pars nationaux et la population est de 4 millions. La langue officiel est le Croate mais l'anglais y est beaucoup parlé. <br><br> Nous vous proposons donc un itinéraire à travers la Croatie afin de découvrir ses beaux paysages, son histoires et ses spécialités. Nous vous proposons de commencer par Zagreb...</p>
+    </div>
+    <div id = "1" style="line-height:20px;">
+        <h1>Zagreb</h1>
+        <br>
+    </div>
+    <div id = "2" style="line-height:20px;">
+        <h1>Plitvice</h1>
+        <br>
+    </div>
+    <div id = "3" style="line-height:20px;">
+        <h1>Split</h1>
+        <br>
+    </div>
+    <div id = "4" style="line-height:20px;">
+        <h1>Korcula</h1>
+        <br>
+    </div>
+    <div id = "5" style="line-height:20px;">
+        <h1>Dubrovnik</h1>
+    </div>
+    <div class="pagination" style = "text-align: center; width: 200px; margin : auto;">
+        <button id="pre" onclick="pre()">❮</button>
+        <button id="next" onclick ="next()">❯</button>
     </div>
 </main>
 <footer>
@@ -82,5 +108,48 @@
     <a href="https://www.reddit.com/"><img class="logomini" src="image/reddit.svg" alt="Reddit"></a>
     <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
 </footer>
+<script>
+    compteur = 0;
+    let p0 = document.getElementById("0");
+    let p1 = document.getElementById("1");
+    let p2 = document.getElementById("2");
+    let p3 = document.getElementById("3");
+    let p4 = document.getElementById("4");
+    let p5 = document.getElementById("5");
+    p0.style.display = "flex";
+    p1.style.display = "none";
+    p2.style.display = "none";
+    p3.style.display = "none";
+    p4.style.display = "none";
+    p5.style.display = "none";
+
+    function next(){
+        if(compteur === 5 ){
+            compteur = 0;
+            p0.style.display = "flex";
+            p1.style.display = "none";
+            p2.style.display = "none";
+            p3.style.display = "none";
+            p4.style.display = "none";
+            p5.style.display = "none";
+        }
+        else{
+            compteur = compteur + 1;
+            for(let i = 0; i < 6; i++){
+                if(compteur === i){
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "flex";
+                }
+                else{
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "none";
+                }
+            }
+        }
+    }
+    function pre(){
+
+    }
+</script>
 </body>
 </html>
