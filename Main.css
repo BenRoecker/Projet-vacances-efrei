@@ -226,6 +226,7 @@ article p
 #articles
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 article a
