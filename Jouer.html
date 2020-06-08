@@ -66,6 +66,22 @@
 </footer>
 <script>
     compteur = 0;
+    var temps = 5;
+    timer = setInterval(function(){
+        if(temps>0)
+        {
+            --temps;
+            document.getElementById("ajouter").innerHTML = "(use in: " + temps + " second)";
+        }
+        else if (temps == 0)
+        {
+            document.getElementById("ajouter").innerHTML = "Ajouter";
+        }
+        else
+        {
+            clearInterval(timer);
+        }
+    }, 1000);
     function create_td(id){
         const newnom = document.createElement("td");
         newnom.textContent= document.getElementById(id).value;
@@ -85,10 +101,12 @@
     function addtomain() {
         let form = document.getElementById("cool");
         let result = form.checkValidity();
-        if (result){
+        if (result && temps === 0){
             let tableau = document.getElementById("avis");
             tableau.appendChild(create_tr());
             compteur = compteur +1;
+            temps = 5;
+
         } else {
             alert("C'est pas bien !")
         }
