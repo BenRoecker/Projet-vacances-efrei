@@ -165,7 +165,7 @@ h2
     background: #F05B82;
     flex-direction: column;
     padding: 10px;
-    border-radius: 20px;
+    box-shadow: 5px 5px white;
     margin: 5px;
     width: fit-content;
     height: auto;
@@ -176,7 +176,7 @@ h2
     background-color: transparent;
     border: 2px solid transparent;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: unset;
 }
 .boutonnav:hover
 {
@@ -193,8 +193,8 @@ article
 {
     border: 2px solid lightskyblue;
     background-color: #A7DAFD;
-    border-radius: 20px;
     padding: 10px;
+    box-shadow: 5px 5px white;
     margin: 10px;
     width: 30%;
     display: flex;
@@ -221,4 +221,6 @@ article p
 article a
 {
     color: black;
+    border-radius: unset;
+    position: center;
 }
