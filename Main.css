@@ -21,7 +21,8 @@ header
     font-family:Verdana, "sans-serif";
     flex-direction: row;
     justify-content: left;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #Main
 {
@@ -33,10 +34,11 @@ header
 a
 {
     border: none;
-    margin: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
     background-color: transparent;
     border-radius: 10px;
-    margin-bottom: auto;
     padding: 10px;
     color : #F05B82;
     text-decoration:none;
@@ -63,6 +65,7 @@ footer
     bottom: 0;
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
 
@@ -75,7 +78,7 @@ footer
 #textfoot
 {
     color: #F05B82;
-    margin: 20px;
+    margin-right : 2%;
     background-color: black;
 }
 #textfoot:hover
@@ -124,8 +127,9 @@ input
     height: 95%;
     box-shadow: 5px 5px lightskyblue;
     border-radius: 5px;
-    max-height: 400px;
+    max-height: 80%;
     overflow: auto;
+    margin-bottom: 100px;
 }
 td,th
 {
@@ -153,6 +157,7 @@ h2
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 90px;
 }
 #wintermain h2
 {
@@ -228,4 +233,9 @@ article a
 #raclette
 {
     margin-left: 20px;
+}
+#footerhiver
+{
+    background-color: white;
+    box-shadow: 1px -5px #F05B82;
 }
