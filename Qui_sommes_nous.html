@@ -22,6 +22,7 @@
             text-align: center;
             font-family: Verdana, "sans-serif";
             font-size: 100%;
+            text-decoration: none;
         }
         .nom
         {
@@ -55,7 +56,7 @@
             padding-bottom: 10%;
         }
 
-        table, caption
+        table, caption, .titre
         {
             background-image: url("image/fond_2.jpg");
             background-size: cover;
@@ -63,12 +64,14 @@
             background-position: center;
         }
 
-        caption
+        caption, .titre
         {
             font-size: 300%;
             font-family: Verdana, "sans-serif";
             color: gray;
             padding: 2%;
+            text-align: center;
+
         }
 
         th, tr{
@@ -86,40 +89,101 @@
         .Camille
         {
             border-radius: 50%;
-            height : 11%;
-            width : 50%;
+            height : 70%;
+            width : 30%;
+            margin-left: 35%;
 
         }
         #p2{background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 100%, 50%, 0.5)), to(#1c1c1c));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;}
+            -webkit-text-fill-color: transparent;
+            text-align: center;}
         .Marie
         {
             border-radius: 50%;
-            height : 10%;
-            width : 50%;
-
-        }
-        #p3{
-            background: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 100%, 50%, 0.9)), to(white));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-
-            }
-        .Benjamin
-        {
-            border-radius: 50%;
-            height : 20%;
-            width : 50%;
+            height : 70%;
+            width : 30%;
+            margin-left: 35%;
 
         }
         #p1{
             background: -webkit-gradient(linear, left top, left bottom, from(cyan), to(black));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-align: center;
+            }
+        .Benjamin
+        {
+            border-radius: 50%;
+            height : 70%;
+            width : 30%;
+            margin-left: 35%;
         }
-        #prenom{color: grey;
+        #p3{
+            font-weight: bolder;
+            background: -webkit-gradient(linear, left top, left bottom, from(#e50b48), to(black));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
         }
+
+
+
+        q { justify-content: center;  color: white; font-family: 'Verdana',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px;  }
+
+        .Body{
+            display: flex;
+            flex-direction: column;
+            background-image: url("image/fond_2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .card-container {
+            cursor: pointer;
+            margin-top: 20px;
+            height: 400px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+
+        }
+        .card {
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            width: 100%;
+            margin-top: 100px;
+
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .side {
+            backface-visibility: hidden;
+            border-radius: 6px;
+            height: 400px;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+
+
+        }
+        .card .back {
+            background: #290000;
+            justify-content: center;
+            transform: rotateY(180deg);
+
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -138,50 +202,60 @@
         </div>
     </header>
 </div>
+    <div>
     <h1 class="nom">Qui sommes-nous ?</h1>
     <p id="p_nous">Dans le cadre d'un projet de développement WEB, nous devions réaliser la plateforme de notre choix.
         La crise sanitaire nous a obligé à rêver de vacances, des grandes plages blanches jusqu'aux pistes de ski.
         De l'eau turquoise aux forêts vertes. Nous voulions vous partager nos rêves, nos idées.</p>
-    <table>
-        <caption>Nos membres</caption>
-        <tr id="prenom">
-            <th>Benjamin <br> Roecker</th>
-            <th>Camille <br> Biguet</th>
-            <th>Marie <br> Sayag</th>
-        </tr>
-        <tr>
-            <th><img class="Benjamin" src="image/Benjamin.jpg" alt=""></th>
-            <th><img class="Camille" src="image/Camille.jpg" alt=""></th>
-            <th><img class="Marie" src="image/Marie.jpg" alt=""></th>
-        </tr>
-        <tr>
-            <th>
-                <q id="p1">Hello, je suis Benjamin Roecker,
+
+    </div>
+    <div class="Body">
+        <h1 class="titre">Nos membres</h1>
+    <div class="cards">
+        <div class="card-container">
+            <div class="card">
+                <div class="side"><img class="Benjamin" src="image/Benjamin.jpg" alt=""></div>
+                <div class="side back" id="p1"><h2 class="prenom">Benjamin Roecker</h2><q class="prenom">
+                    Hello, je suis Benjamin Roecker,
                     lors de ce projet je fut project manager,
                     je fus aussi en chage de la page "hiver" et "à vous de jouer".
                     J'ai pu mettre en pratique mes cours de management.
                     La liberté que nous avons eu pour ce  projet nous a permis de laisser libre cours
                     à notre imagination. C'est une bonne situation ça project manager ?
-                    Vous savez moi je pense pas qu'il y est de bonne ou mauvaise condition....</q>
-            </th>
-            <th id="p2">
-                <q>Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
+                    Vous savez moi je pense pas qu'il y est de bonne ou mauvaise condition....
+                    </q></div>
+            </div>
+
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="side"><img class="Camille" src="image/Camille.jpg" alt="" ></div>
+                <div class="side back" id="p2"><h2 class="prenom">Camille Biguet</h2><q class="prenom">
+                    Je suis Camille Biguet, mon rôle lors de ce projet a été de créer les pages "été"
                     et celle concernant notre proposition de voyage.
                     Ce projet dans lequel nous étions totalement libre,
                     nous a permis d'imaginer un site avec les fonctionnalités que l'on souhaitait et
-                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.</q>
-            </th>
-            <th id="p3">
-                <q>Bonjour et bienvenue ! Je suis Marie Sayag.
+                    a été très sympathique. J'espère que celui-ci vous plaira et vous sera utile.
+                </q></div>
+            </div>
+
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="side"><img class="Marie" src="image/Marie.jpg" alt=""></div>
+                <div class="side back" id="p3"><h2 class="prenom">Marie Sayag</h2><q class="prenom">
+                    Bonjour et bienvenue ! Je suis Marie Sayag.
                     J'ai été chargée de réaliser la page 'Qui sommes nous ?' et la page d'accueil
                     avec l'aide des deux autres membres.
                     Nous avons tenté de rassembler l'utilité avec l'esthétique pour vous faire voyager tout en restant chez vous !
                     Laissez vous submerger par notre monde de paysage et de voyage !
-                    Et n'oubliez pas de nous rejoindre sur nos réseaux !</q>
-            </th>
-        </tr>
-    </table>
+                    Et n'oubliez pas de nous rejoindre sur nos réseaux !</q></div>
+            </div>
 
+        </div>
+
+    </div>
+    </div>
 
 </div>
 <footer>
