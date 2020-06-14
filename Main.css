@@ -167,6 +167,7 @@ h2
     padding: 10px;
     box-shadow: 5px 5px white;
     margin: 5px;
+    margin-top: 40px;
     width: fit-content;
     height: auto;
 }
@@ -214,7 +215,7 @@ article p
 #articles
 {
     display: flex;
-    width: 80%;
+    width: 95%;
     flex-wrap: wrap;
 }
 
