@@ -245,3 +245,8 @@ article a
 {
     text-shadow: 0 0 0.2em #8F7;
 }
+#page{
+    background-image: url("feedback.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
