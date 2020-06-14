@@ -239,3 +239,8 @@ article a
     background-color: white;
     box-shadow: 1px -5px #F05B82;
 }
+
+#Igloofest:hover
+{
+    text-shadow: 0 0 0.2em #8F7;
+}
