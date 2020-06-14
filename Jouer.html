@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jouer</title>
+    <link rel="stylesheet" href="Main.css"/>
+</head>
+<body id="page">
+<header>
+    <div class="logo"><img id="LOGO" src="image/logo WEb .svg" alt ="Logo">
+        <h1>TravelUp</h1></div>
+    <div class="boutons">
+        <a href="index.html">Accueil</a>
+        <a href="Qui_sommes_nous.html">A propos de nous</a>
+        <a id="acc" href="Jouer.html">A vous de jouer</a>
+        <a href="Ete.html">Ete</a>
+        <a href="Hiver.html">Hiver</a>
+        <a href="Itinéraires.html">Notre idée</a>
+    </div>
+</header>
+<main id="jouer">
+    <h2>Donnez votre avis pour une destination</h2>
+    <form id="cool" action="Jouer.html" method="post" class="style_form"  onsubmit="return false">
+        <div id="champ">
+            <label for="prenom">Prénom : </label>
+            <input type="text" placeholder="Prénom" id="prenom" data-value-missing="required" required>
+            <label for="nom">Nom : </label>
+            <input type="text" placeholder="Nom" id="nom" data-value-missing="required" required>
+            <label for="lieux">Lieu</label>
+            <input type="text" placeholder="Lieu de vacances" id="lieux" data-value-missing="required" required>
+            <label for="duree">Durée du séjours : </label>
+            <input type="text" placeholder="Durée du voyage" id="duree" data-value-missing="required" required>
+            <label for="prix">prix du séjours : </label>
+            <input type="text" placeholder="Prix" id="prix" data-value-missing="required" required>
+            <br>
+            <label for="commentaire">Commentaire : </label>
+            <textarea rows=2 COLS=20 placeholder="commentaire" id="commentaire" data-value-missing="required" required></textarea>
+            <label for="note">Avis : </label>
+            <select id="note">
+                <option value="1">1 étoile</option>
+                <option value="2">2 étoiles</option>
+                <option value="3">3 étoiles</option>
+                <option value="4">4 étoiles</option>
+                <option value="5">5 étoiles</option>
+            </select>
+        </div>
+        <div id="button">
+            <button id="ajouter" onclick="addtomain()">Ajouter</button>
+            <button id="supprimer" onclick="supp()">Tout supprimer</button>
+            <button id="couleur" onclick="changement()">Changement de couleur</button>
+        </div>
+    </form>
+    <table id="avis">
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Lieu de résidence</th>
+            <th>Durée du séjours</th>
+            <th>Prix</th>
+            <th>Note /5</th>
+            <th>Commentaire</th>
+        </tr>
+    </table>
+</main>
+<footer id ="footerhiver">
+    <a id="textfoot" href="Qui_sommes_nous.html">A propos de nous</a>
+    <a href="https://fr-fr.facebook.com/"><img class="logomini" src="image/facebook.svg" alt="Facebook"></a>
+    <a href="https://twitter.com/explore"><img class="logomini" src="image/twitter.svg" alt="Twitter"></a>
+    <a href="https://www.reddit.com/"><img class="logomini" src="image/reddit.svg" alt="Reddit"></a>
+    <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
+</footer>
+<script>
+    compteur = 0;
+    var temps = 5;
+    timer = setInterval(function(){
+        if(temps>0)
+        {
+            --temps;
+            document.getElementById("ajouter").innerHTML = "(use in: " + temps + " second)";
+        }
+        else if (temps === 0)
+        {
+            document.getElementById("ajouter").innerHTML = "Ajouter";
+        }
+        else
+        {
+            clearInterval(timer);
+        }
+    }, 1000);
+    function create_td(id){
+        const newnom = document.createElement("td");
+        newnom.textContent= document.getElementById(id).value;
+        console.log(newnom.textContent)
+        return newnom
+    }
+    function create_tr(){
+        const newtr = document.createElement("tr");
+        newtr.appendChild(create_td("prenom"));
+        newtr.appendChild(create_td("nom"));
+        newtr.appendChild(create_td("lieux"));
+        newtr.appendChild(create_td("duree"));
+        newtr.appendChild(create_td("prix"));
+        newtr.appendChild(create_td("note"));
+        newtr.appendChild(create_td("commentaire"))
+        return newtr;
+    }
+    function addtomain() {
+        let form = document.getElementById("cool");
+        let result = form.checkValidity();
+        if (result && temps === 0){
+            let tableau = document.getElementById("avis");
+            tableau.appendChild(create_tr());
+            compteur = compteur +1;
+            temps = 5;
+
+        } else {
+            alert("C'est pas bien !")
+        }
+    }
+    function supp() {
+        let tableau = document.getElementById("avis");
+        for(let i = 0; i < compteur; i ++)
+            tableau.deleteRow(-1);
+        compteur = 0;
+    }
+    let couleur = 0;
+    let page = document.getElementById("page");
+    let form = document.getElementById("cool");
+    let logos = document.getElementsByClassName("logomini");
+    let table = document.getElementById("avis");
+    function changement(){
+        if(couleur === 0){
+            page.style.backgroundColor = "black";
+            page.style.color = "white";
+            form.style.backgroundColor = "grey";
+            table.style.backgroundColor = "black";
+            footer.style.backgroundColor = "black";
+            for(let logo of logos){
+                logo.style.backgroundColor = "#F05B82"
+            }
+            couleur = 1;
+        }
+        else{
+            page.style.backgroundColor = "white";
+            page.style.color = "black";
+            form.style.backgroundColor = "lightgrey";
+            table.style.backgroundColor = "white";
+
+            for(let logo of logos){
+                logo.style.backgroundColor = "white";
+            }
+            couleur = 0;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+header
+{
+    color: #F05B82;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "sans-serif";
+}
+#LOGO
+{
+    height: 50px;
+    margin-right: 3%;
+}
+.logo
+{
+    align-items: center;
+    display: flex;
+    font-family:Verdana, "sans-serif";
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#Main
+{
+    background-image: url("image/Accueil background.png");
+    background-color: #BC0047;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+a
+{
+    border: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    color : #F05B82;
+    text-decoration:none;
+    font-size: 15px;
+}
+
+.boutons
+{
+    align-items: center;
+    width: 800px;
+}
+a:hover
+{
+    background-color: #F05B82;
+    color: white;
+}
+#acc{
+    background-color: #F05B82;
+    color: white;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.logomini
+{
+    height: 50px;
+    padding: 5px;
+}
+#textfoot
+{
+    color: #F05B82;
+    margin-right : 2%;
+    background-color: black;
+}
+#textfoot:hover
+{
+    color: white;
+    border: white 2px solid;
+}
+#winter
+{
+    background-image: url("image/winter background.jpg");
+    background-color: #AAAAAA;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.black
+{
+    color: black;
+}
+
+form
+{
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px #F05B82;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+input
+{
+    margin: 5px;
+}
+#avis
+{
+    border-collapse: collapse;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    height: 95%;
+    box-shadow: 5px 5px lightskyblue;
+    border-radius: 5px;
+    max-height: 80%;
+    overflow: auto;
+    margin-bottom: 110px;
+    background-color: white;
+}
+td,th
+{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    min-width: 200px;
+}
+td
+{
+    border-top:1px deeppink solid;
+}
+h2
+{
+    font-size: 30px;
+    color: black;
+    margin: auto;
+}
+#jouer
+{
+    display: flex;
+    flex-direction: column;
+}
+#wintermain
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+#wintermain h2
+{
+    color: black;
+    margin: auto;
+}
+#navwinter
+{
+    display: flex;
+    background: #F05B82;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 5px white;
+    margin: 5px;
+    margin-top: 40px;
+    width: fit-content;
+    height: auto;
+}
+.boutonnav
+{
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: unset;
+}
+.boutonnav:hover
+{
+    border: 2px solid white;
+    color: white;
+}
+#mainwinter
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+article
+{
+    border: 2px solid lightskyblue;
+    background-color: #A7DAFD;
+    padding: 10px;
+    box-shadow: 5px 5px white;
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+article h3
+{
+    margin : auto;
+}
+
+article p
+{
+    margin-top: 5px;
+}
+
+#articles
+{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+article a
+{
+    color: black;
+    border-radius: unset;
+    position: center;
+}
+#raclette
+{
+    margin-left: 20px;
+}
+#footerhiver
+{
+    box-shadow: 1px -5px #F05B82;
+}
+
+#Igloofest:hover
+{
+    text-shadow: 0 0 0.2em #8F7;
+}
+#page{
+    background-image: url("image/feedback.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

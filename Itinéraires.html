@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Itinérairesss</title>
+    <link rel="stylesheet" href="Main.css"/>
+    <style>
+        #itinéraires{
+            background: linear-gradient(white, #A7DAFD);
+            margin-top : 30px;
+            margin-left: 30px;
+        }
+        div.carte {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        img{
+            margin-left: 30px;
+        }
+        .carte {
+            float:left;
+        }
+        main{
+            font-family: Verdana, "sans-serif" ;
+            text-align: center;
+            margin-bottom: 200px;
+        }
+        body
+        {
+            background-image: url("image/FondCroatie.png");
+            background-size: 100%;
+            background-attachment: fixed;
+            margin-bottom: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        .pagination {
+            display : flex;
+            flex-direction: row;
+        }
+
+        .pagination button {
+            color: #F05B82;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #BC0047;
+            margin : auto;
+        }
+
+        .pagination button.active {
+            color: white;
+            border: 1px solid #F05B82;
+        }
+
+        @keyframes example {
+            0%   {background-color:white; left:0px; top:0px;}
+            25%  {background-color:#A7DAFD; left:200px; top:0px;}
+            50%  {background-color:white; left:200px; top:200px;}
+            75%  {background-color:#F05B82; left:0px; top:200px;}
+            100% {background-color:white; left:0px; top:0px;}
+        }
+
+        /* The element to apply the animation to */
+        #pre, #next {
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            cursor: pointer;
+        }
+
+        .pagination button:hover:not(.active) {background-color: #ddd;}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><img id="LOGO" src="image/logo WEb .svg" alt ="Logo">
+        <h1>TravelUp</h1></div>
+    <div class="boutons">
+        <a href="index.html">Accueil</a>
+        <a href="Qui_sommes_nous.html">A propos de nous</a>
+        <a href="Jouer.html">A vous de jouer</a>
+        <a href="Ete.html">Ete</a>
+        <a href="Hiver.html">Hiver</a>
+        <a id="acc" href="Itinéraires.html">Notre idée</a>
+    </div>
+</header>
+<main><br><br>
+    <p class = "carte">
+        <img src="image/MapCro.PNG" alt="" height="400px" width="400px" />
+    </p>
+    <div id = "0" style="line-height:20px;" >
+        <h1>La Croatie</h1><br><br>
+        <p>La Croatie est un pays d'Europe centrale. Il est entouré par la Slovénie, la Hongrie où encore de la Serbie. On retrouve plusieurs climat en Croatie, un climat continental au nord, un climat méditerranéen dans le littoral et le reste de la Croatie est montagneux. Aussi, il contient huit pars nationaux et la population est de 4 millions. La langue officiel est le Croate mais l'anglais y est beaucoup parlé. <br> Nous vous proposons donc un itinéraire à travers la Croatie afin de découvrir ses beaux paysages, son histoires et ses spécialités. Nous vous proposons de commencer par Zagreb...</p><br><br><br><br>
+    </div>
+    <div id = "1" style="line-height:20px;">
+        <h1>Zagreb</h1><br><br>
+        <p>Il s’agit de la capitale et de la plus grande ville de Croatie. Cette ville compte 780000 habitants et est située en Croatie centrale. Zagreb c’est le cœur de la culture, de l’économie et aussi le centre administratif et politique de la République de Croatie. Son excellente situation géographique au carrefour des routes vers la côte adriatiques et les nombreuses autres villes de l’Europe central, font de Zagreb une destination exceptionnelle et ce, sans compter le charme que la ville tient de son histoire et de sa culture. Découvrez aussi les spécialités culinaires au grand marché de Dolac. Après avoir découvert ce centre culturel, nous vous proposons d’aller à Plitvice…</p><br><br><br><br>
+    </div>
+    <div id = "2" style="line-height:20px;">
+        <h1>Plitvice</h1><br><br>
+        <p>Le parc national des lacs de Plitvice est une réserve forestière de 295 km² au centre de la Croatie. Nous le connaissons pour sa chaîne de 16 lacs en terrasse, liés par des cascades, qui s'étendent dans un canyon calcaire. Des promenades et des chemins de randonnée sont situé tout autour des bassins et sur l'eau, et un bateau électrique relie les 12 lacs supérieurs et les 4 lacs inférieurs. Ces derniers constituent le site de Veliki Slap, une cascade de 78 m de haut.<br> Après avoir découvert ces magnifiques espaces verts, dirigeons-nous vers Split…</p><br><br><br><br>
+    </div>
+    <div id = "3" style="line-height:20px;">
+        <h1>Split</h1><br><br>
+        <p>Split est une ville située sur la côte dalmate en Croatie. Split est réputée pour ses plages et le complexe ressemblant à une forteresse en son centre, le palais de Dioclétien, construit par l'empereur romain au IVe siècle. Autrefois peuplés par des milliers de personnes, ses vastes vestiges comprennent plus de 200 bâtiments. Entre ses murs de pierre blanche et sous ses cours se trouvent une cathédrale et de nombreuses boutiques, bars, cafés, hôtels et maisons. <br>Après être passer par de nombreux musées et ses vestiges, partons pour l’île Korcula…</p><br><br><br><br>
+    </div>
+    <div id = "4" style="line-height:20px;">
+        <h1>Korcula</h1><br><br>
+        <p>Korčula est une île de la mer Adriatique appartenant à la Croatie. En quittant la ville de Korčula, véritable musée en plein air, on trouve la riche verdure de l'île, les villages de viticulteurs, de producteurs d'huile d'olive et de pêcheurs. Les produits les plus renommés de l'île sont les vins – rouges et blancs ainsi que l'huile d'olive pressée comme autrefois. Aujourd'hui, Korčula est l'île la plus peuplée de Croatie. Cela fait plus de cent ans que les visiteurs sillonnent l'île ; le tourisme y est, pour ainsi dire, une tradition. Après avoir profité des plages et de la beauté de l’île, allons vers notre dernière destination : Dubrovnik…</p><br><br><br><br>
+    </div>
+    <div id = "5" style="line-height:20px;">
+        <h1>Dubrovnik</h1><br><br>
+        <p>Dubrovnik est une ville du sud de la Croatie située sur la mer Adriatique. Elle est connue pour sa vieille ville entourée d'énormes remparts en pierre datant du XVIe siècle. Ses monuments, particulièrement bien conservés, vont de l'église baroque Saint-Blaise au palais Sponza, de style Renaissance, en passant par le style gothique. Enfin, la rue piétonne Stradun est bordée de boutiques et de restaurants. <br>Cette très jolie ville offre des paysages magnifiques, c’est pourquoi, nous vous terminons notre voyage par Dubrovnik.</p><br><br><br><br>
+    </div>
+    <div class="pagination" style = "text-align: center; width: 200px; margin : auto;">
+        <button id="pre" onclick="pre()">❮</button>
+        <button id="next" onclick ="next()">❯</button>
+    </div>
+</main>
+<footer>
+    <a id="textfoot" href="Qui_sommes_nous.html">A propos de nous</a>
+    <a href="https://fr-fr.facebook.com/"><img class="logomini" src="image/facebook.svg" alt="Facebook"></a>
+    <a href="https://twitter.com/explore"><img class="logomini" src="image/twitter.svg" alt="Twitter"></a>
+    <a href="https://www.reddit.com/"><img class="logomini" src="image/reddit.svg" alt="Reddit"></a>
+    <a href="https://www.instagram.com"><img class="logomini" src="image/instagram.svg" alt="Instagram"></a>
+</footer>
+<script>
+    compteur = 0;
+    let p0 = document.getElementById("0");
+    let p1 = document.getElementById("1");
+    let p2 = document.getElementById("2");
+    let p3 = document.getElementById("3");
+    let p4 = document.getElementById("4");
+    let p5 = document.getElementById("5");
+    p0.style.display = "block";
+    p1.style.display = "none";
+    p2.style.display = "none";
+    p3.style.display = "none";
+    p4.style.display = "none";
+    p5.style.display = "none";
+
+    function next(){
+        if(compteur === 5 ){
+            compteur = 0;
+            p0.style.display = "block";
+            p1.style.display = "none";
+            p2.style.display = "none";
+            p3.style.display = "none";
+            p4.style.display = "none";
+            p5.style.display = "none";
+        }
+        else{
+            compteur = compteur + 1;
+            for(let i = 0; i < 6; i++){
+                if(compteur === i){
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "block";
+                }
+                else{
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "none";
+                }
+            }
+        }
+    }
+    function pre(){
+        if(compteur === 0 ){
+            compteur = 5;
+            p0.style.display = "none";
+            p1.style.display = "none";
+            p2.style.display = "none";
+            p3.style.display = "none";
+            p4.style.display = "none";
+            p5.style.display = "block";
+        }
+        else{
+            compteur = compteur - 1;
+            for(let i = 0; i < 6; i++){
+                if(compteur === i){
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "block";
+                }
+                else{
+                    let pi = document.getElementById(i.toString());
+                    pi.style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
