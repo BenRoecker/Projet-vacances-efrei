@@ -131,6 +131,7 @@ input
     max-height: 80%;
     overflow: auto;
     margin-bottom: 110px;
+    background-color: white;
 }
 td,th
 {
