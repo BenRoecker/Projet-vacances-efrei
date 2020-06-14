@@ -127,11 +127,13 @@
     let page = document.getElementById("page");
     let form = document.getElementById("cool");
     let logos = document.getElementsByClassName("logomini");
+    let footer = document.getElementById("footerhiver")
     function changement(){
         if(couleur === 0){
             page.style.backgroundColor = "black";
             page.style.color = "white";
             form.style.backgroundColor = "grey";
+            footer.style.backgroundColor = "black";
             for(let logo of logos){
                 logo.style.backgroundColor = "#F05B82"
             }
@@ -141,8 +143,9 @@
             page.style.backgroundColor = "white";
             page.style.color = "black";
             form.style.backgroundColor = "lightgrey";
+            footer.style.backgroundColor = "white";
             for(let logo of logos){
-                logo.style.backgroundColor = "white"
+                logo.style.backgroundColor = "white";
             }
             couleur = 0;
         }
